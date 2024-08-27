@@ -1,0 +1,247 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(209 ,250, 229, 1 );
+}
+.nav-bar{
+  display: flex;
+  gap:50px;
+  padding-top:30px;
+  padding-left:150px;
+}
+.menu ul{
+  display: flex;
+  gap:16px;
+  list-style: none;
+   font-size:18px;
+   padding-top:8px;
+   cursor: pointer;
+}
+.menu a{
+  text-decoration: none;
+  color: #111111;
+}
+.logo{
+  font-size:20px;
+}
+.logo span{
+  color: #059669;
+}
+.container{
+  width: 100%;
+  height:100%;
+  display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-right:300px;
+}
+.info h1{
+  font-size:75px;
+}
+.info h4{
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 15px;
+}
+.info p{
+  padding-top:20px;
+  font-size:20px;
+}
+.image{
+  width:35%;
+}
+.image img{
+  width: 100%;
+}
+.icons{
+  width: 30px;
+  display: flex;
+  gap:25px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.icons img{
+  width: 100%;
+}
+/*------------------- section Skills --------------------*/
+#Skills{
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(245, 253, 252);
+
+}
+.heading {
+   width:90%;
+   padding-left:150px;
+   padding-top: 80px;
+}
+.heading h1{
+  font-size:30px;
+  font-weight:500;
+  padding-bottom: 30px;
+}
+.skilled{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top:80px;
+  padding-left:150px;
+}
+.lang{
+  width: 60%;
+}
+.lang h4{
+  padding-top:25px;
+}
+.lang p{
+  padding-top:12px;
+  line-height: 25px;
+  color: rgb(112, 107, 107);
+}
+.web{
+  width:60px;
+}
+.web img{
+  width: 100%;
+}
+/* ------------------------------about section */
+#About{
+  height:60vh;
+   display: flex;
+   justify-content: space-evenly;
+  padding-top:60px;
+}
+.about{
+  width:23%;
+}
+.about img{
+  width: 100%;
+}
+.code{
+  width:35%;
+}
+.code h1{
+  font-size:32px;
+  font-weight:500;
+  word-spacing:5px;
+  padding-bottom: 15px;
+}
+.code p{
+  line-height:30px;
+  padding-top: 20px;
+  color: rgb(102, 98, 98);
+}
+
+/* --------------------------section  projects */
+#Projects{
+  width: 100%;
+  height:100vh;
+  background-color: rgb(245, 253, 252);
+  margin-bottom:150px;
+}
+.card img{
+  width:100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.projects{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    padding-top:50px;
+    padding-left:100px;
+    padding-right:100px;
+}
+.card{
+  width:30%;
+  height:77vh;
+  background-color:white;
+   border-radius:12px;
+   box-shadow:1px 1px 7px 1px rgb(231, 231, 231);
+}
+.first{
+  width:100%;
+  padding-left:40px;
+  padding-top:30px;
+  line-height: 35px;
+}
+.cards-icon{
+  width: 30px;
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+.cards-icon img{
+  width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+  .nav-bar{
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+  }
+  .container{
+    height: 100vh;
+    padding-right:0px;
+    padding-left: 30px;
+    padding-top: 100px;
+    display: block;
+  }
+  .image img{
+    display: none;
+  }
+  .info h1{
+    font-size:80px;
+  }
+  .heading{
+    padding-left:30px;
+    padding-top: 20px;
+  }
+  .skilled{
+    display: block;
+    padding-left: 20px;
+  }
+  #Skills{
+    height: 100vh;
+  }
+  .lang{
+    width: 100%;
+    padding-top: 20px;
+  }
+  #About{
+    height: 100vh;
+    display: block;
+  }
+  .about{
+    width:100%;
+  }
+  .code{
+    width:90%;
+    padding-left: 40px;
+    padding-top:100px;
+  }
+  .projects{
+    flex-direction: column;
+    gap:40px;
+    padding: 50px 20px 0px 20px;
+  }
+  .card{
+    width:100%;
+    height:62vh;
+  }
+  .about{
+    width:100%;
+  }
+  .first{
+    padding-left:15px;
+  }
+  
+}
